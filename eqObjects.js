@@ -95,3 +95,13 @@ console.log(eqObjects(cd, dc)); // => true
 const cd2 = { c: "1", d: ["2", 3, 4] };
 console.log(eqObjects(cd, cd2));
 
+assertEqual(eqObjects(ab, ba),true);
+assertEqual(eqObjects(ab, abc),false);
+assertEqual(eqObjects(cd, dc),true);
+assertEqual(eqObjects(ab, abc),false);
+
+
+assertEqual(eqArrays(eqObjects(ab, ba),true),true);
+assertEqual(eqArrays(eqObjects(cd, cd2),false),true);
+assertEqual(eqArrays(eqObjects(cd, dc),true),true);
+assertEqual(eqArrays(eqObjects(ab, abc),false),true);
