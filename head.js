@@ -6,7 +6,9 @@
 //     console.log("🛑🛑🛑" + ` Assertion Failed  :${actual} !== ${expected}`);
 //   }
 // };
+
 const assertEqual = require('./assertEqual');
+
 const head = function(num) {
   for (let i = 0; i < num.length; i++) {
     //console.log(i)
@@ -17,4 +19,4 @@ const head = function(num) {
 };
 
 
-
+module.exports = head;
