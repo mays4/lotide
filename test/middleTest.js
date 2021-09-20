@@ -11,12 +11,14 @@ describe("#middle", () => {
   });
 
   
-  it("returns  ['lighthouse'] for ['Yo Yo', 'Lighthouse', 'Labs'] ", () => {
+  it("returns  ['lighthouse'] for ['Hello', 'Lighthouse', 'Labs'] ", () => {
   
-    assert.deepEqual(middle(['Yo Yo', 'Lighthouse', 'Labs']), ['Lighthouse']);
+    assert.deepEqual(middle(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse']);
   });
   
 });
+
+
 
 
 
