@@ -1,8 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
-
-
-
 
 
 const assertObjectsEqual = function(actual, expected) {
@@ -18,3 +13,4 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 module.exports = assertArraysEqual;
+
